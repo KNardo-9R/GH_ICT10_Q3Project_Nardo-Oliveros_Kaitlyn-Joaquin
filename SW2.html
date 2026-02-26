@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PYSCRIPT -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Intramurals Team Checker</title>
+<style>
+  body{
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: White;
+    justify-content: center;
+    background-color:linear-gradient(to right, #0d47a1, #1976d2);;
+}
+.container1{ 
+    background-color:white; 
+    margin-top: 20px;
+    padding: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.container2{
+    background-color: whitesmoke;
+
+  
+}
+.form {
+    padding: 10px; 
+    border: 1px solid; 
+    border-radius: 5px;
+}
+</style>
+
+</head>
+<body>
+
+    <h1>Intramurals Team Checker</h1>
+    <div class="container1">
+        <form>
+            <b><p>Confirm your Intramurals registration</p></b>
+            <input type="text" id="cintrams" placeholder="Confirmed or Unconfirmed"><br>
+            <i><p>Please input only <b>Confirmed</b> or <b>Unconfirmed</b></p></i><hr>
+
+            <p><b>Confirm your medical clearance</b></p>
+            <input type="text" id="cmed" placeholder="Confirmed or Unconfirmed"><br>
+            <i><p>Please input only <b>Confirmed</b> or <b>Unconfirmed</b></p></i><hr>
+
+            <p><b>Input your grade level & section</p></b>
+            <input type="text" id="levelsec" placeholder="[Grade Level]-[Section]"><br>
+            <i><p>Please follow the following format: <b>[Grade Level]-[Section]</b>.<br>Sample: 10-Ruby</p></i>
+
+
+            <input type="button" py-click="checker" value="Check"><br>
+        </form>
+
+        <div id="outputsw2"></div>
+        <py-script src="main.py"></py-script>
+    </div>
+    
+</body>
+</html>
