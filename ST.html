@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PYSCRIPT -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Account Creation</title>
+  <style>
+    
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  color: white;
+  text-align: center;
+}
+
+.sample_intrams-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; 
+}
+
+nav {
+  background: linear-gradient(to right, #111, #333);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+}
+
+.navbar-brand img {
+  width: 80px;
+  position: absolute;
+    top: -35px;
+    left: -1000px;
+    }
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+    
+.container1 {
+    text-align: center;
+    padding: 50px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: rgb(36, 36, 36);
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+#signresult {
+    margin-top: 10px;
+    background-color: #efefef;
+    border-radius: 10px;
+    outline: 4px double #ffffff;
+    padding: 30px;
+    color: #000000;
+    text-align: center
+}
+</style>
+</head>
+<body>
+
+    <div class="container1"> 
+        <form> 
+            <input type="text" id="user"  placeholder="Username"><br>
+            <input type="password" id="pass"  placeholder="Password"><br>
+        <input type="button" py-click="signup" value="Check"><br>
+        </form>
+    </div> 
+
+    <div id="signresult"></div>
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
