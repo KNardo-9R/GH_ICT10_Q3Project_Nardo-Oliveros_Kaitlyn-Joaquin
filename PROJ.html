@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PYSCRIPT -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>INTRAMS 2526</title>
+<style>
+     
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  color: white;
+  text-align: center;
+  
+}
+
+.sample_intrams-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; 
+}
+
+nav {
+  background: linear-gradient(to right, #111, #333);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+}
+
+.navbar-brand img {
+  width: 80px;
+  position: absolute;
+    top: -35px;
+    left: -1000px;
+    }
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+</style>
+</head>
+  
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+       <div class="container-fluid"></div>
+       <a class="navbar-brand" href="index.html">
+                <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1724046681-141.png">
+    <a class="navbar-brand" href="index.html">Homepage</a>
+    <div class="navbar-nav">
+      <a class="nav-link" href="SW2.html">Team Checker</a>
+      <a class="nav-link" href="ST.html">Sign up</a>
+      <a class="nav-link" href="PROJ.html">List of Players</a>
+    </div>
+  </nav>
+  
+     <br>
+     <div class="container-sm mt-5 mb-5">
+        <h1>Intramurals Players</h1>
+        <form>
+            <input type="button" py-click="List_players" value="Click here">
+        </form>
+       
+        <div class="row">
+            <div class="col-md-12">
+                <div id="outputproj"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
