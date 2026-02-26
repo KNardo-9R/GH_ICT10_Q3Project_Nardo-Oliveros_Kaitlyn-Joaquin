@@ -11,63 +11,43 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Intramurals Team Checker</title>
 <style>
-body{
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    color: White;
-    justify-content: center;
-    background-color:linear-gradient(to right, #0d47a1, #1976d2);;
-}
-.container1{ 
-    background-color:white; 
-    margin-top: 20px;
-    padding: 2px;
-    margin-left: 20px;
-    margin-right: 20px;
-
-}
-.container2{
-    background-color: whitesmoke;
-
-  
-}
-.form {
-    padding: 10px; 
-    border: 1px solid; 
-    border-radius: 5px;
-}
-nav {
-  background: linear-gradient(to right, #111, #333);
-  padding: 15px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  position: sticky;
-  top: 0;
-}
-
-.navbar-brand img {
-  width: 80px;
-  position: absolute;
-    top: -35px;
-    left: -1000px;
+body {
+      font-family: "Source Sans 3", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      color: white;
+      background: linear-gradient(to right, #0d47a1, #1976d2);
     }
-
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-  letter-spacing: 1px;
-  position: relative;
-  transition: color 0.3s ease;
-}
+    .container1 { 
+      background-color: white; 
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      color: black;
+    }
+    nav {
+      background: linear-gradient(to right, #111, #333);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+    }
+    .navbar-brand img {
+      width: 80px;
+      position: relative;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
 </style>
 
 </head>
@@ -96,7 +76,7 @@ nav a {
             <input type="text" id="cmed" placeholder="Confirmed or Unconfirmed"><br>
             <i><p>Please input only <b>Confirmed</b> or <b>Unconfirmed</b></p></i><hr>
 
-            <p><b>Input your grade level & section</p></b>
+            <p><b>Input your grade level & section</b></p>
             <input type="text" id="levelsec" placeholder="[Grade Level]-[Section]"><br>
             <i><p>Please follow the following format: <b>[Grade Level]-[Section]</b>.<br>Sample: 10-Ruby</p></i>
 
